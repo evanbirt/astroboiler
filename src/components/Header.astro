@@ -1,6 +1,6 @@
 ---
 import HeaderLink from "@components/HeaderLink.astro";
-import { SITE_TITLE } from "@data/consts";
+import { SITE_TITLE, LINKEDIN_PROFILE, GITHUB_PROFILE } from "@data/consts";
 ---
 
 <header>
@@ -11,12 +11,8 @@ import { SITE_TITLE } from "@data/consts";
     <HeaderLink href="/">Home</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
     <HeaderLink href="/about">About</HeaderLink>
-    <HeaderLink href="https://linkedin.com/in/evanbirt/" target="_blank">
-      LinkedIn
-    </HeaderLink>
-    <HeaderLink href="https://github.com/evanbirt/" target="_blank">
-      GitHub
-    </HeaderLink>
+    <HeaderLink href={LINKEDIN_PROFILE} target="_blank">LinkedIn</HeaderLink>
+    <HeaderLink href={GITHUB_PROFILE} target="_blank">GitHub</HeaderLink>
   </nav>
 </header>
 <style>
